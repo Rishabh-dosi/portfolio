@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Kavoon&family=Poppins&display=swap');
+
+.Home_box {
+    height: fit-content;
+    position: relative;
+    top: auto;
+    width: 100%;
+    background-image: linear-gradient(to bottom, var(--body-bg), white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content_box {
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 2rem 1rem 0rem auto;
+    position: relative;
+    overflow: visible;
+
+}
+.intro{
+    display: flex;
+    width: 100%;
+}
+.profession {
+    font-size: 3rem;
+    color: blue;
+    font-family: 'Kavoon', cursive;
+    position: relative;
+    top: 6px;
+}
+
+.about {
+    font-family: inherit;
+    font-size: 1rem;
+    text-align: left;
+    width: 80%;
+    margin-left: 4%;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    margin: 0 20% 0 20%;
+}
+
+.circular_bg {
+    margin-top: 4rem;
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(241, 255, 38);
+    box-shadow: 2px 2px 2px 2px rgb(89, 89, 89);
+
+}
+
+.my_image {
+    width: 500px;
+    height: 395px;
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    top: 2%;
+    left: 57%;
+    overflow: hidden;
+    
+}
+
+.myname {
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+    margin-top: 3%;
+    letter-spacing: 3px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 3rem;
+
+}
+
+.buttons {
+    display: flex;
+    justify-items: left;
+    margin-left: 4%;
+    margin-top: 2%;
+
+}
+.buttons a{
+    text-decoration: none;
+    position: relative;
+    top: 14px;
+}
+.button {
+    display: flex;
+    width: 130px;
+    height: 50px;
+    padding-top: 12px;
+    margin: 3%;
+    border-radius: 40PX;
+    background-color: rgb(255, 1, 1);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+@media screen and (max-width: 392px){
+    .Home_box{
+        position: relative;
+        margin-top: auto;
+        background-color: rgb(251, 248, 228);
+        width: 100%;
+        height: 840px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .content_box{
+        margin-top: -400px;
+    }
+    .img{
+        margin-left: 1rem;
+        position: relative;
+        top: -28%;
+        width: 100%;
+        padding: 0;
+        margin-left: 2.5rem ;
+        text-align: center;
+
+    }
+    .circular_bg{
+        width: 60%;
+        height: 240px;
+        margin: 0;
+        margin-left: 1.4rem;
+        
+    }
+    .my_image{
+        position: relative;
+        top: -9rem;
+        width: 124%;
+        left: -1.7rem;
+        height: fit-content;
+    }
+    .myname{
+        font-size: 1.4rem;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-right: 6rem;
+    }
+    .content_box{
+        position: relative;
+        top: 25%;
+    }
+    .intro
+    {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+    .about{
+        margin-top: 10px;
+        align-items: center;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .buttons{
+        padding: 9px;
+    }
+
+}

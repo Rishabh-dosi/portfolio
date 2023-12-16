@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Kanit&family=Kavoon&family=Poppins&display=swap');
+.skl_main{
+    position: relative;
+    top: auto;
+    margin-top: 2%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom , var(--body-bg), white);
+}
+.skl_head{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Concert One', cursive;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.skl_set{
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 3rem;
+    column-gap: 8rem;
+    
+}
+.skl_case{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(190deg , rgb(239, 239, 64), rgb(232, 237, 163) , rgb(239, 239, 64));
+    width: 10rem;
+    height: 10rem;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 6px 18px 5px rgb(104, 104, 71);
+}
+.skl_name{
+    font-size: 2rem;
+    font-family: 'Concert One', cursive ;
+    margin: 0 , 0 , 1px , 3px;
+
+}
+.skl_level{
+    font-size: 1.2rem;
+}
+.skl_case:hover{
+    background-image: none;
+    background-color: var(
+        --body-bg
+    );
+}
+@media screen and (max-width: 392px) {
+    .skl_main{
+        top: auto;
+    }
+    .skl_set{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .skl_case{
+        width: 80%;
+        margin: auto;
+    }
+}

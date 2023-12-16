@@ -1,0 +1,105 @@
+.pfl_container {
+    position: relative;
+    top: auto;
+    z-index: 3;
+    font-size: 3rem;
+    color: black;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3%;
+    background-image: linear-gradient(to bottom, var(--body-bg), white);
+}
+
+.pfl_main {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 5% 3rem 5%;
+}
+
+.pfl_head {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 3rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+    justify-content: center;
+    column-gap: 2rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.project_box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    background-color: rgb(253, 224, 0);
+    border-radius: 2rem;
+    box-shadow: 4px 6px 5px rgb(53, 53, 41);
+    transition: transform 0.4s;
+}
+
+.project_box>div {
+    margin: auto;
+}
+
+.project_img {
+    width: 280px;
+    height: 280px;
+    border-radius: 1.4rem;
+    margin: 4px 4px -10px 4px;
+    backface-visibility: hidden;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+.project_name {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 0.1rem;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+}
+
+.project_box:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 6px 7px rgb(53, 53, 41);
+    
+}
+
+.btn {
+    margin-top: -5rem;
+    background-image: linear-gradient(to right, #fff, #d1e84d);
+    color: black;
+    border-radius: 1rem;
+    width: 90px;
+    height: 30px;
+}
+
+.btn:hover {
+    background-image: none;
+}
+
+@media screen and (max-width:392px) {
+    .pfl_main {
+        width: 100%;
+        top: 950px;
+    }
+}

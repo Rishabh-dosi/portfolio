@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.about_box{
+    position: relative;
+    top: auto;
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(to bottom , var(--body-bg), white);
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+
+    
+}
+.about_main{
+    position: relative;;
+    width: 70%;
+    height: 90%;
+    border-radius: 40px;
+    background-image: linear-gradient(180deg, rgb(239, 239, 64) , rgb(232, 237, 163));
+    top: -5%;
+    box-shadow: 5px 6px 18px 5px rgb(104, 104, 71);
+    display: flex;
+    flex-direction: column;
+}
+.abt_head{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 1rem, 0.4rem, 0, 0;
+    margin-top: 3rem;
+    margin-right: 1.4rem;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+}
+.abt_content{
+    display: flex;
+    
+}
+.info{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 19rem 19rem;
+    grid-template-rows: 5rem 5rem;
+}
+.abt_me{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+.lableName{
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+.abt_img{
+    width: 400px;
+    justify-items: center;
+}
+.abt_my_image{
+    margin-left: 5rem;
+    margin-top: 4rem;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 392px){
+    .about_box{
+        position: relative;
+        top: auto;
+        margin-top: 4px;
+    }
+    .about_main{
+        top: auto;
+        background: inherit;
+        box-shadow: none;
+        width: 100%;
+    }
+    .abt_content{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .abt_me{
+        display: flex;
+        flex-direction: row;
+    }
+    .lableName{
+        font-size: 1rem;
+    }
+    .abt_my_image{
+        width: 200px;
+        height: 200px;
+        box-shadow: 2px 4px 5px 2px rgb(76, 78, 59)
+    }
+}
